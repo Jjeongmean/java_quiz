@@ -4,9 +4,9 @@ public class Quiz7 {
     public static void main(String[] args) {
         double x = 5.0;
         double y = 0.0;
-        double z = 5 % y;
+        double z = 5 % y; // 현재 NaN 상태
 
-        if (Double.isInfinite(z) || Double.isNaN(z)) {
+        if (Double.isNaN(z)) {
             System.out.println("0.0으로 나눌 수 없습니다.");
         } else {
             double result = z + 10;
