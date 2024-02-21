@@ -111,8 +111,7 @@ public class CustomerApplication {
         System.out.println("휴대폰 번호: ");
         String tel = scanner.next();
 
-        System.out.println("사용 포인트: ");
-        int point = scanner.nextInt();
+
 
         // 입력받은 휴대폰번호로 고객이름 찾기
         Customer customer = findCustomer(tel);
@@ -120,10 +119,14 @@ public class CustomerApplication {
         if (customer == null) {
             System.out.println("결과: 고객정보가 없습니다");
             return;
-        } if (customer.getPoint() < 500) {
+        } if (customer.getPoint() <= 500) {
             System.out.println("500점 이상부터 사용 가능합니다");
             return;
         } else {
+            System.out.println("사용 포인트: ");
+
+            int point = scanner.nextInt();
+
             if (customer.getPoint() < point ) {
                 System.out.println("포인트가 부족합니다");
                 return;
