@@ -1,5 +1,6 @@
 package ch15.Quiz08;
 
+import java.util.List;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -15,6 +16,5 @@ public class HashSetExample {
         for(Student s : set) {
             System.out.println(s.studentNum + ":" + s.name);
         }
-
     }
 }

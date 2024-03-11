@@ -15,8 +15,10 @@ public class Student {
 
     @Override
     public boolean equals(Object obj) {
-        if (!(obj instanceof Student student)) return false;
-        return studentNum != student.studentNum;
-
+        if (obj instanceof Student student) { //Object object = new student()
+            return studentNum == student.studentNum;
+        } else {
+            return false;
+        }
     }
 }

@@ -24,3 +24,5 @@ public class ThreadExample {
     }
 }
 
+//풀이: main 스레드와 thread1이 실행되지만 thread1은 2초에 한번씩 실행되므로 main 스레드의 결과보다 늦게 출력된다.
+
